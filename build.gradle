@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	compile group: 'org.apache.sshd', name: 'sshd-core', version: '1.4.0'
+	compile group: 'commons-io', name: 'commons-io', version: '2.5'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+	compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.1'
+	
+	// 
+	runtime group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+	
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.16'
+}
+
